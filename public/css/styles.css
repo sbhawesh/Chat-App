@@ -134,6 +134,7 @@ button:disabled {
   flex-shrink: 0;
 }
 
+
 .chat__footer form {
   flex-grow: 1;
   display: flex;
