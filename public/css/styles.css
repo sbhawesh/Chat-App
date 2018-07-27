@@ -16,6 +16,38 @@ h3 {
   text-align: center;
   font-size: 1.5rem;
 }
+ .chat__leave {
+   flex-grow: 1;
+   display: flex;
+   padding: 10px;
+
+ }
+ .chat__join {
+   flex-grow: 1;
+   display: flex;
+   padding: 10px;
+
+ }
+  .chat__leave button {
+  border: none;
+  background : red;
+  padding-left: 20px
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: background .3s ease;
+
+}
+
+  .chat__join button {
+    border: none;
+    background : #199fdb;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    transition: background .3s ease;
+
+  }
 
 button {
   border: none;
@@ -85,7 +117,7 @@ button:disabled {
 
 .chat__sidebar {
   overflow-y: scroll;
-  width: 260px;
+  width: 300px;
   height: 100vh;
   background: -moz-linear-gradient(125deg, rgba(39,107,130,1) 0%, rgba(49,84,129,1) 100%); /* ff3.6+ */
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(49,84,129,1)), color-stop(100%, rgba(39,107,130,1))); /* safari4+,chrome */

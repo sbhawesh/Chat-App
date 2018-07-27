@@ -13,7 +13,14 @@
 <body class="chat">
 
 	<div class="chat__sidebar">
-		<h3>People</h3>
+		<div class="chat__leave">
+      <button id="leave_room">Leave Room</button>
+		</div>
+		<div class="chat__join">
+      <button id="add__people">Add People</button>
+		</div>
+
+		<h3>People Active</h3>
 		<div id="users"></div>
 	</div>
 
@@ -29,9 +36,28 @@
 
 		<button>Send</button>
 	</form>
+	<!-- <form id="video-form">
+	<button id="send-videolnk">video call</button>
+</form> -->
 	<button id="send-location">Send location</button>
   </div>
 </div>
+
+<!-- <script id="video-message-template" type="text/template">
+	<li class="message">
+		<div class="message__title">
+			<h4>{{from}}</h4>
+			<span>{{createdAt}}</span>
+		</div>
+		<div class="message__body">
+			<p>	<a href="{{url}}" target="_blank">{{from}}</a></p>
+
+		</div>
+
+	</li>
+
+</script> -->
+
 
 <script id="message-template" type="text/template">
 	<li class="message">

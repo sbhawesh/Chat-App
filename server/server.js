@@ -26,7 +26,7 @@ var users = new Users();
 // });
 
 app.post('/join',(req,res) => {
-	
+	res.render('join.html');
 
 });
 app.post('/add',(req,res) => {

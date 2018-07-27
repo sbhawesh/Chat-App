@@ -79,6 +79,21 @@ jQuery('#message-form').on('submit',function (e) {
   });
 });
 
+var addPeople = jQuery('#add__people');
+addPeople.on('click', function () {
+  var params = jQuery.deparam(window.location.search);
+  window.location.href = '/add.html';
+})
+
+var leaveRoom = jQuery('#leave_room');
+leaveRoom.on('click', function () {
+    var user = jQuery.deparam(window.location.search);
+    socket.emit('leaveRoom',{
+      user: user.name
+    });
+    window.location.href = '/';
+});
+
 var locationButton = jQuery('#send-location');
 locationButton.on('click', function () {
   if(!navigator.geolocation) {
