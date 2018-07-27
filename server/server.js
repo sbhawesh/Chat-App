@@ -1,6 +1,6 @@
 const path = require('path');
 const http = require('http');
-const helper = require('sendgrid').mail;
+const helper = require('@sendgrid/mail');
 const express = require('express');
 const socketIO = require('socket.io');
 const port = process.env.PORT || 3000;
