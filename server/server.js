@@ -25,6 +25,10 @@ var users = new Users();
 // 	res.send("Mail Send successfully !!!")
 // });
 
+app.post('/join',(req,res) => {
+	
+
+});
 app.post('/add',(req,res) => {
 	console.log('in log')
 	var user = req.body.usrnm;
